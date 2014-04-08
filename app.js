@@ -1,11 +1,12 @@
 $(document).ready(function() {
 	$('#button').click(function() {
+		$('.i').remove();
 		fizzBuzz();
 	});
 });
 
 function addIt(i) {
-	$('.main').append('<div>' + i + '</div>');
+	$('.main').append('<div class="i">' + i + '</div>');
 }
 
 function fizzBuzz() {
